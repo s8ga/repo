@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>s8ga package repository</title>
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;max-width:760px;margin:2.5rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+code,pre{background:#f4f4f4;border-radius:4px;padding:.1em .35em;font-size:.95em}
+pre{padding:.8em;overflow:auto}
+table{border-collapse:collapse}
+td,th{border:1px solid #ddd;padding:.35rem .6rem;text-align:left}
+</style>
+</head>
+<body>
+<h1>s8ga package repository</h1>
+<p>Flat APT repository hosting s8ga's Debian packages, built automatically from
+upstream releases. Unsigned, served over HTTPS from GitHub Pages.</p>
+
+<h2>Add the repository (Debian / Ubuntu)</h2>
+<pre><code>echo "deb [trusted=yes] https://s8ga.github.io/repo/deb/ ./" \
+  | sudo tee /etc/apt/sources.list.d/s8ga.list
+sudo apt update</code></pre>
+<p>Then install any package listed below, e.g.
+<code>sudo apt install tailscale-derper-oauth</code>.</p>
+
+<h2>Packages</h2>
+<table>
+<tr><th>Package</th><th>Description</th></tr>
+<tr>
+<td><a href="https://github.com/s8ga/derp-guard">tailscale-derper-oauth</a></td>
+<td>Unmodified upstream Tailscale derper plus a cross-tailnet OAuth admission
+controller, as a single deb</td>
+</tr>
+</table>
+</body>
+</html>

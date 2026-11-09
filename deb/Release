@@ -1,0 +1,22 @@
+Architectures: amd64 arm64
+Codename: stable
+Date: Mon, 09 Nov 2026 08:30:59 +0000
+Label: s8ga-repo
+Origin: s8ga-repo
+Suite: stable
+MD5Sum:
+ 05cf6b36a8d3567518f87c2f557eb3dc             2994 Packages
+ f7480f76f3c6221fb940db4bca293dad              874 Packages.gz
+ 643b39205ed3f0337e4fa823ea865448              131 Release
+SHA1:
+ fce494e4920f2b5b66e9ae09a428da17c852b164             2994 Packages
+ 0852c35a9cf078f2ed7e7ae1fc4ec6c2ac39bbb4              874 Packages.gz
+ 977a2bbfbc2256fb9b71b8ba4fdfd550e0344477              131 Release
+SHA256:
+ cc558498ee4a2c8651ef7237016a0a2a7cc72e850d071894abc275b559776d3d             2994 Packages
+ 91d50856cb5ad2f39d23b060aa1b7a6535478ebe6cf7f85e74bb10cbaba91e17              874 Packages.gz
+ 30815e5cc3168ecc725107b4231655afa41c3f9dc6eb6f8ff11e3b521f0ac745              131 Release
+SHA512:
+ fb43979320a2246217b9d7f7ae376cc2a74cd93f8d9cd049a87de49ea187878ed5cb1b19a1b9a4378d4b2603a40252caefc9b64cd6f7a65d3c79a644a6a87e46             2994 Packages
+ 7c4fe2cb3c5fb051d8d43c2a761b5a2b6867af3584d9f8c80dcda0f9058587ba8e590e71c031de3f9171e9b9574f4fd163c7d08e37145d3d94ce4ef5ec0454f3              874 Packages.gz
+ b8896138c2e7d1aff3f4aba82a3f74c93c8175fa443f09e6a802d031911c43640371abeba8ad1d1b49a853367722ce639cf01da972b4c41cda48a4d39e22a7f7              131 Release
