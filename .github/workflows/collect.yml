@@ -1,0 +1,37 @@
+name: collect
+
+on:
+  schedule:
+    - cron: '17 3 * * *' # daily; workflow_dispatch for on-demand runs
+  workflow_dispatch:
+
+# Single writer to the gh-pages pool: serialize with ourselves only.
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install apt repo tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq dpkg-dev apt-utils
+
+      - name: Checkout gh-pages pool
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git clone --depth=1 -b gh-pages \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" pool
+
+      - name: Collect release assets and rebuild indexes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WATCHED: |
+            s8ga/derp-guard
+        run: bash scripts/collect.sh pool
