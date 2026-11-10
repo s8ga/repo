@@ -1,0 +1,31 @@
+name: reindex
+
+on:
+  workflow_dispatch:
+
+# Only one writer to the gh-pages pool at a time.
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  reindex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install apt repo tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq dpkg-dev apt-utils
+
+      - name: Checkout gh-pages pool
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git clone --depth=1 -b gh-pages \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" pool
+
+      - name: Rebuild APT indexes
+        run: bash scripts/reindex.sh pool
