@@ -1,22 +1,22 @@
 Architectures: amd64 arm64
 Codename: stable
-Date: Tue, 10 Nov 2026 04:25:41 +0000
+Date: Tue, 10 Nov 2026 05:59:05 +0000
 Label: s8ga-repo
 Origin: s8ga-repo
 Suite: stable
 MD5Sum:
- b1c122edbde7319cb3fce12a5f8d782b             2898 Packages
- 6b1be4c87ab7a1c00f4a218a4ffd446a              876 Packages.gz
- 9c210d42c5f3dfcc9e34772ac0b12e2f              131 Release
+ 780f35e079c9b871fea33b692c868e2d             4347 Packages
+ 500b0ccd26526fb2b80ef103af65c5fd             1092 Packages.gz
+ 93dbfc865d0fea21edce2b1049b04a99              131 Release
 SHA1:
- 4d915d29401a8e6b2dcd5992d758261ec6399acf             2898 Packages
- 9b3f8e408ce1b4e15bd8a19f69d3ef7d9e9a9444              876 Packages.gz
- 3821fca6a7f8ff89d8ee233d692ff4d4071bd9e8              131 Release
+ ec1d196a2fbbfc16ae9ed13e6e6c93000526affd             4347 Packages
+ 34a1e08dba79f3b9edf71d4c4c1e6e102c7463e6             1092 Packages.gz
+ 0d3f4df488fe84d766706562681e122d457191b8              131 Release
 SHA256:
- dc5f88e9e6bfb4119a8b97326257f822cbdfbc04e81cf0bdbbf6ec268fbc00fe             2898 Packages
- 0ef7590eabaf141b04be68ac399ac664866eb6b70fc43e8896c2e1c0060c97ab              876 Packages.gz
- c8018570f71878a01e0700fe5915443b40085654adafd4149418a9a3ac5d2e69              131 Release
+ ce3501fdfa334b9c39b4d4dbbc124f9b73a98528956c66c727659b89842fb676             4347 Packages
+ 5d2e369a8e4223b5e287afef63ee95f4d8e6739f6ccf36424e9cfd8118662374             1092 Packages.gz
+ 9e5f34717a079b372365db555eea96be68af4815151f7e84ad36f66634f9f220              131 Release
 SHA512:
- 1c75829722c58c50ad5b5599c56ab253e5984ec4158bbabc15807ebc40656e71b0950c21a42cb3d0ee63ccb63fd707182279b14ff1a9d9d54503647ac13576bd             2898 Packages
- 835d65b50b0c4dda0ad2845e5e5dd12c4b538452b7ce3774fba0641cb9ea7d10869d30b3e973b62d03aea817d21166f1077a2ee37c3cd71418801586e0af1cea              876 Packages.gz
- 28bd4df7165255ff311ab7aeadc20b4c97ea046f48bf0c6a0abcc920d358b7f6934d73e162e20f89221b14bd61624e5f41358c6475203a5684e3c881a7047ddb              131 Release
+ 76d86b1dc7ceee247823665c6b7149cfa69db1451a4ed4286a3aeb0e723551a7918383b472e5b03dfb958ea7f63db3f83506567c9bb63c46d832ca2bc90292e4             4347 Packages
+ 677a631501c18b8b82148837fd8c711f16768ad59037ffe32bd1067dae375ced197379d3753b2ab5a1848549cdf591987228a679b67e093cbabed3e20beb8dba             1092 Packages.gz
+ 5e27b7e4583c7787c3a88b175574657f2a36f2fca0942fe2f47341e957fd8d41b8ae36836bcd3447850b6fa22d2146ec0e4c5ff7c03e1675dd491009319c74cf              131 Release

@@ -70,3 +70,39 @@ Description: Unmodified upstream Tailscale DERP server (derper) bundled with a c
  supervises derper, and only admits devices that are authorized (and not shared
  in externally) in the configured tailnets.
 
+Package: derp-guard
+Version: 1.104.5~9
+Architecture: amd64
+Maintainer: s8ga <s8ga@users.noreply.github.com>
+Installed-Size: 25279
+Filename: ./derp-guard_1.104.5.9_amd64.deb
+Size: 10254088
+MD5sum: 0bd4ac66c09d889f9bfaf8c459516d2b
+SHA1: 0cc0219f536f04802f6be5ddff3f36405213d1df
+SHA256: 0afb3cb643a534a91a55a5402639ac8b488d526531756005e0e293ed4b09f2af
+Section: net
+Priority: optional
+Homepage: https://github.com/s8ga/derp-guard
+Description: Unmodified upstream Tailscale DERP server (derper) bundled with a cross-tailnet
+ OAuth admission controller (derp-guard). derp-guard runs as the parent process,
+ supervises derper, and only admits devices that are authorized (and not shared
+ in externally) in the configured tailnets.
+
+Package: derp-guard
+Version: 1.104.5~9
+Architecture: arm64
+Maintainer: s8ga <s8ga@users.noreply.github.com>
+Installed-Size: 23491
+Filename: ./derp-guard_1.104.5.9_arm64.deb
+Size: 9273664
+MD5sum: d30b59a0dda1f2eb029676e6aa74219d
+SHA1: e99bb860bd65740a77fed0db4391471baf36fa75
+SHA256: cff6a13ebdba23a7392ed772afb45c38b927f82b35ac2a38700de3635c2a708b
+Section: net
+Priority: optional
+Homepage: https://github.com/s8ga/derp-guard
+Description: Unmodified upstream Tailscale DERP server (derper) bundled with a cross-tailnet
+ OAuth admission controller (derp-guard). derp-guard runs as the parent process,
+ supervises derper, and only admits devices that are authorized (and not shared
+ in externally) in the configured tailnets.
+
