@@ -4,6 +4,7 @@
 set -euo pipefail
 
 POOL="${1:?usage: reindex.sh <gh-pages-checkout>}"
+POOL="$(cd "$POOL" && pwd)" # normalize to absolute so later cds work
 cd "$POOL/deb"
 
 dpkg-scanpackages --multiversion . > Packages
